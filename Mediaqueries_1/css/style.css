@@ -1,0 +1,118 @@
+img:hover {
+    transform: scaleX(-1);
+  }
+
+nav ul{
+    display:flex;
+    justify-content: space-around; 
+    list-style-type: none;
+}
+
+@media screen and (min-width:1250px) 
+    {
+        ul:first-of-type li:first-child {
+            background-color: blue;
+        }
+        ul:first-of-type li:nth-child(2) {
+            background-color: green;
+        }
+   
+}
+
+/* exo 2 */
+@media screen and (max-width:1250px) 
+    {
+        ul:nth-of-type(2) li:first-child {
+            background-color: orange;
+        }
+        ul:nth-of-type(2) li:nth-child(2) {
+            background-color: red;
+        } 
+}
+
+
+/* exo 3 */
+@media screen and (max-width:1000px) 
+    {
+        ul:nth-of-type(3) li:nth-child(1) {
+            font-weight:bold ;
+            text-decoration: underline;} 
+    }
+
+@media screen and (min-width:1250px) 
+{
+    ul:nth-of-type(3) li:nth-child(2) {
+    font-style: italic;
+    background-color: blue;}}
+ 
+
+/* exo 4 */
+@media screen and ((max-width:800px) or (min-width:900px))
+ {      
+        /* #exo4 { */
+        h2:nth-of-type(4) {
+        background-color: green;
+        border:solid black 10px;}
+}
+
+/*exo 5 */
+
+@media screen and (min-width:900px) and (max-width:1250px)
+ {      
+        /* #exo5 { */
+        h2:nth-of-type(5) {
+        background-color: red;
+        border:solid black 10px;}
+}
+
+/* exo 6 */
+
+#exo6 {
+    height: 250px;
+    width: 250px;
+    background-image:url("../images/tartine.jpg");}
+
+@media  (max-width:900px)
+{
+    #exo06 {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+/* exo 7 */
+@media print {
+    h2 {
+      color: black;
+    }
+    img {
+      display: none;
+    }
+  }  
+
+  /* exo 8 */
+  /* on va considérer qu'en-dessous de 900/500 => smartphone */
+
+@media (max-width: 900px) and (max-height:500px) { 
+    li {
+        display: table-column;
+    }
+    a:hover {
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    li:hover {
+        background-color: green;
+    }
+    li {
+        font-size:xx-large;
+    }
+    img{
+        display:none;
+    }
+}
+
+
+

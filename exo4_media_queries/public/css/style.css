@@ -1,0 +1,38 @@
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+
+@media screen and (min-width:1024px) 
+    {
+    .square {
+        width: 33vw;
+        height: 33vw;
+        background-color: blue;
+        border: solid green 5px;
+        border-radius: 50%;
+    }
+    }
+
+@media screen and (min-width:600px) and (max-width:1023px)
+    {
+    .square {
+        width: 66vw;
+        height: 66vw;
+        background-color: red;
+        border:solid yellow 5px;
+        border-radius: 15px;
+    }
+    }
+
+
+@media screen and (min-width:320px) and (max-width:599px)
+{
+    .square {
+        width: 100vw;
+        background-color: orange;
+        border:solid black 5px;
+    }
+}

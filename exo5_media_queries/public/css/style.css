@@ -1,0 +1,74 @@
+body {
+    background-color: cornsilk;
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+
+}
+
+
+.square {
+    height: 200px;
+    width: 0px;
+    background-color: white;
+}
+
+
+@media screen and (min-width:1024px) 
+    {
+    .square:first-of-type {
+        width: 33vw;
+        height: 33vw;
+        background-color: red;
+    }
+    .square:nth-of-type(2) {
+        width: 33vw;
+        height: 33vw;
+        background-color: green;
+    }
+    .square:nth-child(3) {
+        width: 33vw;
+        height: 33vw;
+        background-color: orange;
+    }
+    }
+
+@media screen and (min-width:600px) and (max-width:1023px)
+    {
+        .square:first-of-type {
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+        }
+        .square:nth-of-type(2) {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+        }
+        .square:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+        }
+    }
+
+
+@media screen and (min-width:320px) and (max-width:599px)
+{
+    .square:first-of-type {
+        width: 100vw;
+        height: 100vw;
+        background-color: red;
+    }
+    .square:nth-of-type(2) {
+        width: 100vw;
+        height: 100vw;
+        background-color: green;
+    }
+    .square:nth-of-type(3) {
+        width: 100vw;
+        height: 100vw;
+        background-color: orange;
+    }
+}
+
